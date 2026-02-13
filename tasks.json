@@ -1,0 +1,14 @@
+[
+    {
+        "text": "comprar sal",
+        "done": true
+    },
+    {
+        "text": "comprar ma\u00e7a",
+        "done": false
+    },
+    {
+        "text": "comprar livros",
+        "done": false
+    }
+]
