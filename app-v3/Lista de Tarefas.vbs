@@ -1,3 +1,3 @@
 Set WshShell = CreateObject("WScript.Shell")
-WshShell.Run """Python"" ""C:\repositorios\flet-projeto01\app-v3\main.py""", 0, False
+WshShell.Run """C:\Users\Ari\AppData\Local\Programs\Python\Python310\pythonw.exe"" ""C:\repositorios\flet-projeto01\Projetos-Flet\app-v3\main.py""", 0, False
 
