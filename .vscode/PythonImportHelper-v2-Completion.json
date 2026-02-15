@@ -1,0 +1,117 @@
+[
+    {
+        "label": "flet",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "flet",
+        "description": "flet",
+        "detail": "flet",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Checkbox",
+        "importPath": "custom_checkbox",
+        "description": "custom_checkbox",
+        "isExtraImport": true,
+        "detail": "custom_checkbox",
+        "documentation": {}
+    },
+    {
+        "label": "Checkbox",
+        "importPath": "custom_checkbox",
+        "description": "custom_checkbox",
+        "isExtraImport": true,
+        "detail": "custom_checkbox",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app-v3.main",
+        "description": "app-v3.main",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Minhas tarefas\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 420\n    page.window.height = 650\n    page.padding = ft.padding.only(top=20, left=20,right=20, bottom=20)\n    page.bottom_appbar = ft.BottomAppBar(\n        content=ft.Row(\n            controls=[\n                ft.Text(\"Autor: Ari Júnior - Versão: 1.0\"),",
+        "detail": "app-v3.main",
+        "documentation": {}
+    },
+    {
+        "label": "FILE_NAME",
+        "kind": 5,
+        "importPath": "app-v3.main",
+        "description": "app-v3.main",
+        "peekOfCode": "FILE_NAME = \"tasks.json\"\ndef main(page: ft.Page):\n    page.title = \"Minhas tarefas\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 420\n    page.window.height = 650\n    page.padding = ft.padding.only(top=20, left=20,right=20, bottom=20)\n    page.bottom_appbar = ft.BottomAppBar(\n        content=ft.Row(\n            controls=[",
+        "detail": "app-v3.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "aula01.main",
+        "description": "aula01.main",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Minhas tarefas\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 420\n    page.window.height = 650\n    page.padding = ft.padding.only(top=20, left=20, right=20, bottom=20)\n    def add_task(e):\n        task_list.controls.append(ft.Checkbox(label=new_task.value))\n        new_task.value = ''\n        page.update()",
+        "detail": "aula01.main",
+        "documentation": {}
+    },
+    {
+        "label": "Checkbox",
+        "kind": 6,
+        "importPath": "aula05.custom_checkbox",
+        "description": "aula05.custom_checkbox",
+        "peekOfCode": "class Checkbox(ft.Row):                 # Herda de ft.Row\n    def __init__(self, text):           # Construtor recebe o texto da tarefa\n        super().__init__()              # Chama o construtor da classe pai (ft.Row)\n        self.text_view = ft.Text(text)  # Componente de texto\n        # Campo de edição, inicialmente invisível\n        self.text_edit = ft.TextField(value=text, visible=False) \n        # Botão de editar\n        self.edit_button = ft.IconButton(icon=ft.Icons.EDIT, on_click=self.edit) \n        # Botão de salvar, inicialmente invisível\n        self.save_button = ft.IconButton(icon=ft.Icons.SAVE, on_click=self.save, visible=False, icon_color=\"green\") ",
+        "detail": "aula05.custom_checkbox",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "aula05.main",
+        "description": "aula05.main",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Minhas tarefas\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 450\n    page.window.height = 650\n    page.padding = ft.padding.only(top=20, left=20, right=20, bottom=20)\n    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER\n    page.scroll = ft.ScrollMode.AUTO\n    async def add_task(e):\n        if new_task.value.strip() == \"\":",
+        "detail": "aula05.main",
+        "documentation": {}
+    },
+    {
+        "label": "Checkbox",
+        "kind": 6,
+        "importPath": "aula08.custom_checkbox",
+        "description": "aula08.custom_checkbox",
+        "peekOfCode": "class Checkbox(ft.Row):                 # Herda de ft.Row\n    def __init__(self, text):           # Construtor recebe o texto da tarefa\n        super().__init__()              # Chama o construtor da classe pai (ft.Row)\n        self.text_view = ft.Text(text)  # Componente de texto\n        # Campo de edição, inicialmente invisível\n        self.text_edit = ft.TextField(value=text, visible=False) \n        # Botão de editar\n        self.edit_button = ft.IconButton(icon=ft.Icons.EDIT, on_click=self.edit) \n        # Botão de salvar, inicialmente invisível\n        self.save_button = ft.IconButton(icon=ft.Icons.SAVE, on_click=self.save, visible=False, icon_color=\"green\") ",
+        "detail": "aula08.custom_checkbox",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "aula08.main",
+        "description": "aula08.main",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Minhas tarefas\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 450\n    page.window.height = 650\n    page.padding = ft.padding.only(top=20, left=20, right=20, bottom=20)\n    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER\n    page.scroll = ft.ScrollMode.AUTO\n    async def add_task(e):\n        if new_task.value.strip() == \"\":",
+        "detail": "aula08.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Testes.teste01",
+        "description": "Testes.teste01",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Teste 01\"\n    page.window.width = 400\n    page.window.height = 300\n    coluna = ft.Column(\n        controls=[\n            linha1 = ft.Row(\n                controls=[\n        ft.Text(\"Coluna 01\"),\n    ft.Text(\"Coluna 02\"),",
+        "detail": "Testes.teste01",
+        "documentation": {}
+    }
+]
