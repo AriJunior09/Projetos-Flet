@@ -110,8 +110,44 @@
         "kind": 2,
         "importPath": "Testes.teste01",
         "description": "Testes.teste01",
-        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Teste 01\"\n    page.window.width = 400\n    page.window.height = 300\n    coluna = ft.Column(\n        controls=[\n            linha1 = ft.Row(\n                controls=[\n        ft.Text(\"Coluna 01\"),\n    ft.Text(\"Coluna 02\"),",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Teste 01\"\n    page.theme_mode = ft.ThemeMode.DARK\n    page.window.width = 400\n    page.window.height = 300\n    linha01 = ft.Row(controls=[ft.Text(\"Lin1 Col01 | \"), ft.Text(\"Lin1 Col02 | \"), ft.Text(\"Lin1 Col03 | \")])\n    linha02 = ft.Row(controls=[ft.Text(\"Lin2 Col01 | \"), ft.Text(\"Lin2 Col02 | \"), ft.Text(\"Lin2 Col03 | \")])\n    linha03 = ft.Row(controls=[ft.Text(\"Lin3 Col01 | \"), ft.Text(\"Lin3 Col02 | \"), ft.Text(\"Lin3 Col03 | \")])\n    coluna = ft.Column(\n        controls=[",
         "detail": "Testes.teste01",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Testes.teste02",
+        "description": "Testes.teste02",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Teste 02\"\n    page.theme_mode = ft.ThemeMode.LIGHT\n    page.window.width = 400\n    page.window.height = 500\n    page.window.resizable = True\n    txt_titulo = ft.Text('Descrição do produto: ')\n    produto = ft.TextField(label=\"Digite a descrição do produto...\", text_align=ft.TextAlign.LEFT)\n    txt_preco = ft.Text('Preço do produto ')\n    preco = ft.TextField(value=\"0\", label=\"Digite o Preço...\", text_align=ft.TextAlign.LEFT)",
+        "detail": "Testes.teste02",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Testes.teste03",
+        "description": "Testes.teste03",
+        "peekOfCode": "def main(page):\n    page.title = \"Seja bem vindo!\"\n    page.window.width = 400\n    page.window.height = 500\n    def login(e):\n        if not entrada_nome.value:\n            entrada_nome.error_text = \"Favor digite o seu nome!\"\n            entrada_nome.error_text = \"Favor digite o seu nome!\"\n            page.update()\n        if not entrada_senha.value:",
+        "detail": "Testes.teste03",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Testes.teste04",
+        "description": "Testes.teste04",
+        "peekOfCode": "def main(page):\n    page.window.width = 400\n    page.window.height = 500\n    def login(e):\n        # Limpa erros anteriores\n        entrada_nome.error_text = None\n        entrada_senha.error_text = None\n        erro = False\n        if not entrada_nome.value:\n            entrada_nome.error_text = \"Por favor preencha o seu nome!\"",
+        "detail": "Testes.teste04",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Testes.teste05",
+        "description": "Testes.teste05",
+        "peekOfCode": "def main(page: ft.Page):\n    page.title = \"Seja bem vindo!\"\n    page.window.width = 400\n    page.window.height = 500\n    entrada_nome = ft.TextField(label=\"Digite seu nome...\")\n    entrada_senha = ft.TextField(label=\"Digite a sua senha...\")\n    def login(e):\n        # Limpar mensagens de erro anteriores\n        entrada_nome.error_text = None\n        entrada_senha.error_text = None",
+        "detail": "Testes.teste05",
         "documentation": {}
     }
 ]
